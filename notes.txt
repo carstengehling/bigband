@@ -1,0 +1,11 @@
+BigBand - the entire solution
+
+Conductor - WebApi controlling the work to do
+
+Artist - Locally installed agent that polls the Conductor for work to do
+
+Band/Ensemble - A group of Atists (typically a company and their computers or a group of servers)
+
+Composition - a script for the Agent to run
+
+Concert - 

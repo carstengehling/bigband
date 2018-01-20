@@ -12,3 +12,63 @@ Orchestration for remote Windows environments
 | **Ensemble** | Artists can be grouped in Ensembles to simplify running the same Compositions on multiple computers. |
 | **Composition** | The PowerShell scripts that a sys-admin creates to run on various computers. |
 | **Performance** | When an Artist has played a Composition, it sends back a report to the Conductor whether it went well, and the output. This is the Performance. |
+
+## Artist registration
+
+             +---------+                   +-----------+                                    +-----------+
+             | Artist  |                   | Conductor |                                    | Ensemble  |
+             +---------+                   +-----------+                                    +-----------+
+    ------------\ |                              |                                                |
+    | Installed |-|                              |                                                |
+    |-----------| |                              |                                                |
+                  |                              |                                                |
+                  | Register into Ensemble       |                                                |
+                  |----------------------------->|                                                |
+                  |                              |                                                |
+                  |                              | Validate artist credentials and register       |
+                  |                              |----------------------------------------------->|
+                  |                              |                                                |
+                  |                              |                                             OK |
+                  |                              |<-----------------------------------------------|
+                  |                              |                                                |
+                  |        Registration approved |                                                |
+                  |<-----------------------------|                                                |
+                  |                              |                                                |
+                  
+## Artist query
+
+            +---------+                      +-----------+
+            | Artist  |                      | Conductor |
+            +---------+                      +-----------+
+    -----------\ |                                 |
+    | Periodic |-|                                 |
+    |----------| |                                 |
+                 |                                 |
+                 | Get unplayed compositions       |
+                 |-------------------------------->|
+                 |                                 |
+                 |          List of 2 compositions |
+                 |<--------------------------------|
+                 |                                 |
+                 | Play composition                |
+                 |-----------------                |
+                 |                |                |
+                 |<----------------                |
+                 |                                 |
+                 | Submit performance              |
+                 |-------------------------------->|
+                 |                                 |
+                 |                    Acknowledged |
+                 |<--------------------------------|
+                 |                                 |
+                 | Play composition                |
+                 |-----------------                |
+                 |                |                |
+                 |<----------------                |
+                 |                                 |
+                 | Submit performance              |
+                 |-------------------------------->|
+                 |                                 |
+                 |                    Acknowledged |
+                 |<--------------------------------|
+                 |                                 |

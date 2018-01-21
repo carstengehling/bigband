@@ -10,7 +10,7 @@ using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Conductor.Controllers
+namespace Conductor.Api.Controllers
 {
     [Produces("application/json")]
     [Route("api/Accounts")]

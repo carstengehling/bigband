@@ -1,7 +1,8 @@
-﻿using System;
+﻿using Conductor.Domain.Commands;
+using System;
 using System.Collections.Generic;
 
-namespace Conductor.Domain.Artists
+namespace Conductor.Domain
 {
     public class Artist
     {

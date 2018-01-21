@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Conductor.Domain.Artists
+namespace Conductor.Domain.Commands
 {
     public enum PerformanceResult
     {

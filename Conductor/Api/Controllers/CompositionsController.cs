@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 
-namespace Conductor.Controllers
+namespace Conductor.Api.Controllers
 {
     [Produces("application/json")]
     [Route("api/Artists/{ArtistKey}/Compositions")]

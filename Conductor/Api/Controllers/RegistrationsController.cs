@@ -9,7 +9,7 @@ using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
 
-namespace Conductor.Controllers
+namespace Conductor.Api.Controllers
 {
     [Produces("application/json")]
     [Route("api/Artists/Registrations")]
@@ -24,6 +24,7 @@ namespace Conductor.Controllers
             _repository = repository ?? throw new ArgumentNullException(nameof(repository));
         }
 
+        /*
         [HttpPost]
         public IActionResult Post([FromBody]ArtistRegistrationDTO registration)
         {
@@ -35,6 +36,7 @@ namespace Conductor.Controllers
             var token = GenerateJwtToken(artist);
             return Created($"/api/artists/{artist.Key}/compositions", token);
         }
+        */
 
         private object GenerateJwtToken(ArtistDTO artist)
         {

@@ -1,7 +1,6 @@
 ﻿using Conductor.Entities;
 using Conductor.Repositories.DTO;
 using System;
-using System.Linq;
 
 namespace Conductor.Repositories.Adapters
 {
@@ -19,6 +18,12 @@ namespace Conductor.Repositories.Adapters
             throw new System.NotImplementedException();
         }
 
+        public ArtistDTO GetArtistByMacAddress(string macAddress)
+        {
+            throw new NotImplementedException();
+        }
+
+        /*
         public ArtistDTO CreateArtist(ArtistRegistrationDTO registration)
         {
             var ensemble = _context.Ensembles.FirstOrDefault(e => e.Key == registration.EnsembleKey);
@@ -42,6 +47,17 @@ namespace Conductor.Repositories.Adapters
                 ComputerName = artist.ComputerName,
                 MacAddress = artist.MacAddress
             };
+        }
+        */
+
+        public void CreateArtist(ArtistDTO artist)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void BindArtistToEnsemble(ArtistDTO artist, EnsembleDTO ensemble)
+        {
+            throw new NotImplementedException();
         }
     }
 }

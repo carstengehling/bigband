@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Conductor.Entities;
 
-namespace Conductor.Controllers
+namespace Conductor.Api.Controllers
 {
     [Produces("application/json")]
     [Route("api/Artists")]
